@@ -1,21 +1,20 @@
 import java.util.Scanner;
 public class IT26102479Lab4Q1 {
-	
-	public static void main(String[] args) {
-		 
-	    
-		int number;
-		String result;
-		
-		Scanner input = new Scanner(System.in);
-		
-		System.out.print("Enter a number:");
-		number = input.nextInt();
-		
-		result = (number > 0)? "The number is: Positive":
-		         (number < 0)? "The number is: Negative":
-				 "The number is: Zero";
-				 
-		System.out.println(result);
+
+      public static void main(String[] args) {
+	  
+	   Scanner input = new Scanner(System.in);
+	   
+	   System.out.print("Enter a number :");
+	   int number = input.nextInt();
+	   
+	   if (number > 0) {
+	      System.out.println("The number is: Positive");
+        } else if (number < 0) {
+		       System.out.println("The number is: Negative");
+	    } else { 
+		      System.out.println("The number is : Zero");
 		}
+		
+	}
 }
